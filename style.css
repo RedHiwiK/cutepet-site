@@ -206,33 +206,12 @@ ul {
     justify-content: center;
 }
 
-.phone-mockup {
-    width: 240px;
-    height: 480px;
-    background: var(--pet-card-background);
-    border-radius: 36px;
-    border: 4px solid var(--pet-divider);
-    box-shadow: var(--shadow-card), 0 20px 60px rgba(255, 155, 174, 0.15);
-    overflow: hidden;
-    position: relative;
-}
-
-.phone-screen {
+.hero-screenshot {
     width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg,
-        var(--pet-paw-print) 0%,
-        var(--pet-background) 40%,
-        var(--pet-card-background) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.phone-screen::after {
-    content: "🐾";
-    font-size: 64px;
-    opacity: 0.3;
+    max-width: 280px;
+    height: auto;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card), 0 20px 60px rgba(255, 155, 174, 0.15);
 }
 
 .hero-bg-decor {
@@ -604,9 +583,8 @@ ul {
         flex: none;
     }
 
-    .phone-mockup {
-        width: 200px;
-        height: 400px;
+    .hero-screenshot {
+        max-width: 240px;
     }
 
     .features-grid {
